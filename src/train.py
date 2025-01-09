@@ -168,5 +168,5 @@ class ProjectAgent():
     def save(self, path='DQN_weights.pth'):
         torch.save(self.model.state_dict(), path)
 
-    def load(self, path='WDQN_weights.pth'):
+    def load(self, path='DQN_weights.pth'):
         self.model.load_state_dict(torch.load(path,map_location=torch.device(self.device)))
